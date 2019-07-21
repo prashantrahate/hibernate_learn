@@ -1,7 +1,5 @@
 package com.prashant.dto;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,8 +24,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name="USER_DETAILS")
-public class UserDetails implements Serializable{
-
+public class UserDetails {
 	@JsonIgnore
 	@Transient
 	private static final long serialVersionUID = 1L;
