@@ -57,7 +57,6 @@
 		</resources>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
@@ -66,31 +65,6 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok-maven-plugin</artifactId>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>testDelombok</goal>
-							<goal>delombok</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.projectlombok</groupId>
-					<artifactId>lombok-maven-plugin</artifactId>
-					<version>1.16.8.0</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 </project>
